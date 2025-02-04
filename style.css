@@ -1,0 +1,41 @@
+canvas {
+    border: 2px solid black;
+    background: #f0f0f0;
+}
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+.game-info{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.score {
+    font-size: 24px;
+    margin: 10px;
+}
+.lives {
+    font-size: 24px;
+    margin: 10px;
+    color: red;
+}
+.timer {
+    font-size: 24px;
+    margin: 10px;
+    color: blue;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background: #f0f0f0;
+    border: 2px solid black;
+    cursor: pointer;
+    user-select: none;
+}

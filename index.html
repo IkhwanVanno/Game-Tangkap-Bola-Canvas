@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Tangkap Bola</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-info">
+        <div class="timer">Waktu: <span id="timer">60</span> detik</div>
+        <div class="score">Skor: <span id="score">0</span></div>
+        <div class="lives">Nyawa: <span id="lives">3</span></div>
+      </div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="button">
+      <button onclick="startGame()">Start</button>
+      <button
+        onmousedown="holding.left = true"
+        ontouchstart="holding.left = true"
+        onmouseup="holding.left = false"
+        ontouchend="holding.left = false"
+      >
+        <==
+      </button>
+      <button
+        onmousedown="holding.right = true"
+        ontouchstart="holding.right = true"
+        onmouseup="holding.right = false"
+        ontouchend="holding.right = false"
+      >
+        ==>
+      </button>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
